@@ -15,6 +15,10 @@ const swiper2 = new Swiper('.swiper-container--reviews', {
     maxRatio: 1.5,
     minRatio: 1
   },
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -38,6 +42,3 @@ function init(){
         zoom: 18
     });
 }
-
-var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene);
